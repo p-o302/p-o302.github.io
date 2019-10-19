@@ -9,7 +9,7 @@ a{
 body{
     width: 100%;
     background-image: url(https://cdn.pixabay.com/photo/2018/01/24/18/05/background-3104413_960_720.jpg);
-    background-size: cover;
+    background-size: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .menu{
