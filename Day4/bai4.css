@@ -8,6 +8,7 @@ a{
 }
 body{
     width: 100%;
+    height: 800px;
     background-image: url(http://pluspng.com/img-png/starry-sky-background-png-night-sky-star-background-material-blue-800.jpg);
     background-size: cover;
     font-family: Georgia, 'Times New Roman', Times, serif;
