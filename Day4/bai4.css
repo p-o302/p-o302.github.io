@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    width: 100%;
+    background-image: url(http://pluspng.com/img-png/starry-sky-background-png-night-sky-star-background-material-blue-800.jpg);
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.menu{
+    margin-left: 17.5%;
+    display: flex;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    list-style-type: none;
+}
+.menu li{
+    width: 200px;
+    background-color: rgb(189, 184, 177);
+    line-height: 50px;
+}
+.menu li:hover{
+    background-color: rgb(115, 122, 134);
+}
+.menu1{
+    display: none;
+    position: absolute;
+    line-height: 50px;
+    margin: 0px ;
+    list-style:block;
+    list-style-type: none;
+}
+.menu li:hover .menu1{
+    display: block;
+}
+.menu2{
+    display: none;
+    position: absolute;
+    line-height: 50px;
+    margin: 0px ;
+    list-style:block;
+    list-style-type: none;
+}
+.menu li:hover .menu2{
+    display: block;
+}
+.menu3{
+    display: none;
+    position: absolute;
+    line-height: 50px;
+    margin: 0px ;
+    list-style:block;
+    list-style-type: none;
+}
+.menu li:hover .menu3{
+    display: block;    
+}
+.menu3-1{
+    display: none;
+    position: absolute;
+    line-height: 50px;
+    margin-top: -50px ;
+    list-style:block;
+    list-style-type: none;
+    margin-left: 200px;
+}
+.menu3 li:hover .menu3-1{
+    display: block;
+}
+.menu4{
+    display: none;
+    position: absolute;
+    line-height: 50px;
+    margin: 0px ;
+    list-style:block;
+    list-style-type: none;
+}
+.menu li:hover .menu4{
+    display: block;
+}
+.menu5{
+    display: none;
+    position: absolute;
+    line-height: 50px;
+    margin: 0px ;
+    list-style:block;
+    list-style-type: none;
+}
+.menu li:hover .menu5{
+    display: block;
+}
+
