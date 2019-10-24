@@ -1,0 +1,146 @@
+/* .a{
+    width: 200px;
+    height: 300px;
+    background-color: brown;
+    z-index: 4;
+    position: absolute;
+}
+
+.ab{
+    position: absolute;
+    z-index: 7;
+    width: 100px;
+    height: 200px;
+    background-color: rgb(15, 41, 192);
+} */
+*{
+    margin: 0;
+    padding: 0;
+}
+.comtainer{
+    width: 100%;
+    background-color: rgb(153, 150, 150);
+}
+.header{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 99%;
+    background-color: lightpink;
+    height: 100px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: snow;
+}
+.menu{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 99%;
+    background-color: rgb(7, 7, 7);
+    height: 40px;
+    position: relative;
+}
+span{
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    /* line-height: 40px; */
+}
+.menu ul li{
+    list-style-type: none;
+    display: inline-table;
+    line-height: 40px;
+    margin-left: 15px;
+}
+.body{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 99%;
+    display: flex;
+    height: 900px;
+}
+.left{
+    width: 64%;
+    height: 99%;
+}
+.l1{
+    height: 430px;
+    width: 100%;
+    background-color: lemonchiffon;
+}
+.content{
+    margin-left: 10px;
+    width: 100%;
+}
+.img{
+    background-color: lightslategrey;
+    height: 150px;
+    width: 97%;
+}
+.img p{
+    margin-left: 10px;
+}
+.l2{
+    margin-top: 10px;
+    height: 430px;
+    width: 100%;
+    background-color: rgb(19, 151, 48);
+}
+.right{
+    margin-left: 10px;
+    width: 35%;
+    height: 99%;
+    
+}
+.r1{
+    width: 100%;
+    height: 250px;
+    background-color: darkseagreen;
+}
+.title1{
+    margin-left: 20px;
+}
+.img1{
+    margin-left: 20px;
+    background-color: lightslategrey;
+    height: 100px;
+    width: 94%;
+}
+.img1 p{
+    margin-left: 10px;
+}
+.r2{
+    margin-top: 10px;
+    width: 100%;
+    height: 380px;
+    background-color: rgb(69, 161, 184);
+}
+.r3{
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(184, 163, 69);
+}
+.r3 h3{
+    margin-left: 15px;
+}
+.r3 p{
+    margin-left: 15px;
+}
+.footer{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 99%;
+    height: 100px;
+    background-color: saddlebrown;
+}
+.footer p{ 
+    margin-left: 50%;
+    color: snow;
+    position: absolute;
+    line-height: 100px;
+    font-size: 30px;
+    font-weight: bold;
+}
