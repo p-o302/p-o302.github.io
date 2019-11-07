@@ -122,7 +122,8 @@ a{
 }
 .icon a{
     color: white;
-}
-.icon i{
     margin-left: 30px;
+}
+.icon i:hover{
+    background-color: red;
 }
