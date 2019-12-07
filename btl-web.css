@@ -236,7 +236,7 @@ a{
     font-size: 30px;
 }
 .content{
-    margin-left: 3.3cm;
+    /* margin-left: 3.3cm; */
     margin-top: 70px;
     display: flex;
     height: 1500px !important;
