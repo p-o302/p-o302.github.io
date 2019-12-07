@@ -33,7 +33,7 @@ a{
     margin-left: 30px;
 }
 .menu ul li{
-    font-size: 14px;
+    font-size: 16px;
     position: relative;
     list-style-type: none;
     display: inline;
@@ -50,7 +50,7 @@ a{
     color: white;
 }
 .sub-menu{
-    font-size: 10px !important;
+    font-size: 12px !important;
     line-height: 20px;
     box-shadow: rgb(29, 28, 28) 5px 5px 5px 5px;
     margin-top: -3px;
@@ -64,7 +64,7 @@ a{
     background-color:rgb(29, 28, 28) ;
 }
 .sub-menu1{
-    font-size: 10px;
+    font-size: 12px;
     margin-left: 80px;
     box-shadow: rgb(29, 28, 28) 5px 5px 5px 5px;
     margin-top: -3px;
@@ -112,7 +112,7 @@ a{
     background-color:  rgb(29, 28, 28);
 }
 .choose-lang{
-    font-size: 13px;
+    font-size: 15px;
     line-height: 30px;
     box-shadow: rgb(29, 28, 28) 3px 2px 1px 2px;
     width: 350px;
@@ -152,7 +152,7 @@ a{
     color: rgb(194, 192, 192);
     text-decoration: none;
     padding: 20px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
 }
 .nav-menu ul li:hover{
@@ -174,7 +174,7 @@ a{
     color: black;
     height: 28px;
     margin-top: 1px;
-    font-size: 13px;
+    font-size: 15px;
 }
 .search button{
     width: 38px;
@@ -192,15 +192,15 @@ a{
 }
 .container h1{
     margin-top: 1.5cm;
-    margin-left: 2.3cm;
+    /* margin-left: 2.3cm; */
     font-weight: 400;
-    font-size: 50px;
+    font-size: 70px;
 }
 .container p{
     color: gray;
-    margin-left: 2.3cm;
+    /* margin-left: 2.3cm; */
     font-weight: 300;
-    font-size: 22px;
+    font-size: 35px;
 }
 .carousel-indicators{
     margin-top: 1cm !important;
@@ -225,7 +225,7 @@ a{
     height: 100px !important;
     border: beige 2px solid;
     margin-left: -0.5cm;
-    font-size: 20px;
+    font-size: 30px;
 }
 .carousel-control-next-icon{
     margin-top: 15%;
@@ -233,7 +233,7 @@ a{
     height: 100px !important;
     border: beige 2px solid;
     margin-left: 3cm;
-    font-size: 20px;
+    font-size: 30px;
 }
 .content{
     margin-left: 3.3cm;
@@ -246,7 +246,7 @@ a{
 }
 .left a{
     padding: 5px;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none !important;
      color: rgb(12, 130, 177);
 }
@@ -256,7 +256,7 @@ a{
     text-shadow: -1px -1px rgba(0, 0, 0, 0.322);
     cursor: default;
     line-height: 29px;
-    font-size: 14px;
+    font-size: 16px;
     color: #ffffff
 }
 .topsell a:hover{
@@ -265,7 +265,7 @@ a{
     text-shadow: -1px -1px rgba( 0, 0, 0, 0.25 );
     cursor: default;
     line-height: 29px;
-    font-size: 14px;
+    font-size: 16px;
     color: #ffffff
 }
 .what-play a:hover{
@@ -274,7 +274,7 @@ a{
     text-shadow: -1px -1px rgba( 0, 0, 0, 0.25 );
     cursor: default;
     line-height: 29px;
-    font-size: 14px;
+    font-size: 16px;
     color: #ffffff
 }
 hr{
@@ -290,7 +290,7 @@ hr{
     background-color: rgba( 0, 0, 0, 0.2 );
 }
 .not-im span{
-    font-size: 12px;
+    font-size: 14px;
     color: #c6d4df;
     padding: 10px;
 }
@@ -307,7 +307,7 @@ hr{
     text-shadow: -1px -1px rgba( 0, 0, 0, 0.25 );
     cursor: default;
     line-height: 29px;
-    font-size: 14px;
+    font-size: 16px;
     color: #ffffff
 }
 .left{
@@ -352,7 +352,7 @@ hr{
 }
 .discount{
     display: block;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 16% !important;
     margin-left: 1cm;
     line-height: 20px;
@@ -372,12 +372,12 @@ hr{
 .price{
     font-family: Tahoma, Arial, Helvetica, sans-serif;
     color: #9099a1;
-    font-size: 13px;
+    font-size: 15px;
 }
 .original-price{
     text-decoration: line-through;
     color: #626366;
-    font-size: 11px;
+    font-size: 13px;
 }
 .price{
     display: inline-block;
@@ -396,7 +396,7 @@ hr{
 }
 .see-more span{
     height: 30px;
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 5px;
 }
 .pre-page{
@@ -445,7 +445,7 @@ hr{
     margin-top: 5px;
     background: transparent;
     color: #fff !important;
-    font-size: 12px;
+    font-size: 14px;
     padding: 0 15px;
     border: 1px solid rgba(255,255,255,0.4);
     border-radius: 2px;
@@ -464,7 +464,7 @@ hr{
 .right{
     margin-left: 15px;
     width: 30%;
-    font-size: 15px;
+    font-size: 17px;
 }
 .r1{
     position: relative;
@@ -484,7 +484,7 @@ hr{
     height: 50px !important;
     font-family: "Motiva Sans", Sans-serif;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 15px;
     width: 100%;
     padding: 25px;
     margin-left: -100%;
@@ -500,7 +500,7 @@ hr{
 .r2 span{
     font-family: "Motiva Sans", Sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
     color: #fff;
     margin: 0 0 10px;
@@ -509,7 +509,6 @@ hr{
 }
 .R2{
     width: 100%;
-    /* margin-top: 10px; */
     display: flex;
 }
 .R2-1{
@@ -523,7 +522,7 @@ hr{
 }
 .R2-1 a{
     line-height: 25px;
-    font-size: 12px;
+    font-size: 14px;
     color: #67c1f5 !important;
     display: block;
     text-decoration: none !important;
@@ -544,7 +543,7 @@ hr{
 .r3 span{
     font-family: "Motiva Sans", Sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
     color: #fff;
     margin: 0 0 10px;
@@ -562,7 +561,7 @@ hr{
 }
 .r3-ảnh-giá1{
     margin-left: 5px;
-    font-size: 12px;
+    font-size: 14px;
     background-color: rgba( 64, 120, 152, 0.4 );
     background: -webkit-linear-gradient( top, rgba( 64, 120, 152, 0.4 ) 5%, rgba(0,0,0,0.2) 95%);
     background: linear-gradient( to bottom, rgba( 64, 120, 152, 0.4 ) 5%, rgba(0,0,0,0.2) 95%);
@@ -585,7 +584,7 @@ hr{
 }
 .r3-dis-pct{
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 16% !important;
     margin-left: 2.5cm;
     line-height: 20px;
@@ -613,7 +612,7 @@ hr{
 .dis-final-pri{
     font-family: Tahoma, Arial, Helvetica, sans-serif;
     color: #90a19a;
-    font-size: 13px;
+    font-size: 15px;
     margin-left: 5px;
 }
 .r3-giá:hover{
@@ -628,7 +627,7 @@ hr{
 .r3-bot a{
     line-height: 37px;
     padding: 5px;
-    font-size: 11px;
+    font-size: 13px;
     border-radius: 2px;
     color: white;
     text-decoration: none !important;
@@ -646,7 +645,7 @@ hr{
 .r4 span{
     font-family: "Motiva Sans", Sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
     color: #fff;
     margin: 0 0 10px;
@@ -681,7 +680,7 @@ hr{
 }
 .r4-dis-pct{
     display: block;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 17px;
     height: 17px;
     padding: 0 4px;
@@ -707,20 +706,20 @@ hr{
 .dis-original-pri1{
     text-decoration: line-through;
     color: #626366;
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 9px;
     margin-left: 70%;
 }
 .dis-final-pri1{
     font-family: Tahoma, Arial, Helvetica, sans-serif;
     color: #90a19a;
-    font-size: 11px;
+    font-size: 13px;
     margin-left: 5px;
 }
 .dis-original-pri2{
     text-decoration: line-through;
     color: #626366;
-    font-size: 9px;
+    font-size: 11px;
     margin-left: 5px;
 }
 .footer{
@@ -761,7 +760,7 @@ hr{
     color: white !important;
 }
 .ft-nav ul li{
-    font-size: 12px !important;
+    font-size: 14px !important;
     display: inline-block;
     margin-left: 5px;
     background-color: #2c628b;
@@ -844,7 +843,7 @@ hr{
     width: 90px;
     border: 2px white solid;
     padding: 5px;
-    font-size: 17px !important;
+    font-size: 19px !important;
     color: white;
 }
 .ft-logo a:hover{
@@ -855,14 +854,14 @@ hr{
     margin-left: 15px;
     color: rgba(245, 245, 245, 0.61);
     text-align: left;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 250 !important;
 }
 .t1{
     width: 800px !important;
 }
 .t2 a{
-    font-size: 13px;
+    font-size: 15px;
     color: rgba(255, 255, 255, 0.801);
 }
 .t2 a:hover{
@@ -877,7 +876,7 @@ hr{
     margin-left: 6cm;
 }
 .ft-bot a{
-    font-size: 15px;
+    font-size: 17px;
     color: rgba(255, 255, 255, 0.801);
 }
 .ft-bot a:hover{
