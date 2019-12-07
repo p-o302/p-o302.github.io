@@ -128,7 +128,6 @@ a{
     z-index: 10;
 }
 .nav{
-    
     position: relative;
     margin-top: 50px;
     width: 65%;
@@ -735,7 +734,7 @@ hr{
 }
 .footer .ft-cnt{
     position: absolute;
-    width: 940px;
+    width: 1000px;
     margin: 0px auto;
     padding-top: 16px;
     text-align: center;
@@ -743,10 +742,11 @@ hr{
 .ft-cnt hr{
     height: 0.5px !important;
     color: #67c1f5;
-    margin-left: 30%;
+    margin-left: 25%;
 }
 .ft-nav ul{
     width: 100%;
+    margin-left: -6%;
 }
 .ft-nav a{
     padding: 3px;
@@ -832,4 +832,55 @@ hr{
 }
 .ft-nav ul li:hover .ft-sub-nav3{
     display: block;
+}
+.ft-mid{
+    display: flex;
+    margin-left: 7cm;
+    padding: 10px;
+    width: 100%;
+}
+.ft-logo a{
+    height: 40px;
+    width: 90px;
+    border: 2px white solid;
+    padding: 5px;
+    font-size: 17px !important;
+    color: white;
+}
+.ft-logo a:hover{
+    text-decoration: none;
+    color: white;
+}
+.text{
+    margin-left: 15px;
+    color: rgba(245, 245, 245, 0.61);
+    text-align: left;
+    font-size: 13px;
+    font-weight: 250 !important;
+}
+.t1{
+    width: 800px !important;
+}
+.t2 a{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.801);
+}
+.t2 a:hover{
+    color: white !important;
+    text-decoration: none !important;
+}
+.ft-pic img{
+    width: 200px !important;
+    margin-right: 1cm !important;
+}
+.ft-bot{
+    margin-left: 6cm;
+}
+.ft-bot a{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.801);
+}
+.ft-bot a:hover{
+    color: white !important;
+    text-decoration: none !important;
 }
