@@ -729,7 +729,7 @@ hr{
     padding: 16px 0 60px 0;
     margin: 0;
     height: 300px;
-    background: rgba(70, 68, 68, 0.308);
+    /* background: rgba(70, 68, 68, 0.308); */
  
 }
 .footer .ft-cnt{

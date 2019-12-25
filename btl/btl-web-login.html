@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>That's BTL WEB-HIT(login)</title>
+    </head>
+    <body>
+        <link rel="stylesheet" href="./btl-web-login.css">
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <!-- bắt đầu phần login -->
+        <div class="container-fluid">
+      
+        <div class="header">
+            <div class="logo">
+                <a href="https://store.steampowered.com/games/">
+                    <img src="https://i.imgur.com/m43Wjf4.png" alt="">
+                </a>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="">STORE</a>
+                            <ul class="sub-menu">
+                                <li><a href="">FEATURED</a></li>
+                                <li><a href="">EXPLORE</a></li>
+                                <li><a href="">CURATORS</a></li>
+                                <li><a href="">WISHLIST</a></li>
+                                <li><a href="">NEWS</a></li>
+                                <li><a href="">STARTS</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">COMMUNITY</a>
+                            <ul class="sub-menu1">
+                                <li><a href="">HOME</a></li>
+                                <li><a href="">DISCUSSTIONS</a></li>
+                                <li><a href="">WORKSHOP</a></li>
+                                <li><a href="">MARKET</a></li>
+                                <li><a href="">BROADCASTS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">SUPPORT</a></li>
+                    </ul>
+                </div>
+                <div class="down-log-lang">
+                    <div class="down">
+                        <a href=""> <i class="fas fa-download"></i> install
+                            steam</a>
+                    </div>
+                    <div class="log">
+                        <a href="./"> login</a>
+                    </div>
+                    <div class="lang">
+                        <ul>
+                            <li>
+                                <a href=""> | &nbsp; language <i class="fas
+                                        fa-sort-down"></i></a>
+                                <ul class="choose-lang">
+                                    <li><a href=""> 简体中文 (Simplified Chinese)</a></li>
+                                    <li><a href="">繁體中文 (Traditional Chinese)</a></li>
+                                    <li><a href="">日本語 (Japanese)</a></li>
+                                    <li><a href="">한국어 (Korean)</a></li>
+                                    <li><a href="">ไทย (Thai)</a></li>
+                                    <li><a href="">Български (Bulgarian)</a></li>
+                                    <li><a href="">Čeština (Czech)</a></li>
+                                    <li><a href="">Dansk (Danish)</a></li>
+                                    <li><a href="">Deutsch (German)</a></li>
+                                    <li><a href="">Español - España (Spanish -
+                                            Spain)</a></li>
+                                    <li><a href="">Español - Latinoamérica
+                                            (Spanish - Latin America)</a></li>
+                                    <li><a href="">Ελληνικά (Greek)</a></li>
+                                    <li><a href="">Français (French)</a></li>
+                                    <li><a href="">Italiano (Italian)</a></li>
+                                    <li><a href="">Magyar (Hungarian)</a></li>
+                                    <li><a href="">Nederlands (Dutch)</a></li>
+                                    <li><a href="">Norsk (Norwegian)</a></li>
+                                    <li><a href="">Polski (Polish)</a></li>
+                                    <li><a href="">Português (Portuguese)</a></li>
+                                    <li><a href="">Português - Brasil
+                                            (Portuguese - Brazil)</a></li>
+                                    <li><a href="">Română (Romanian)</a></li>
+                                    <li><a href="">Русский (Russian)</a></li>
+                                    <li><a href="">Suomi (Finnish)</a></li>
+                                    <li><a href="">Svenska (Swedish)</a></li>
+                                    <li><a href="">Türkçe (Turkish)</a></li>
+                                    <li><a href="">Українська (Ukrainian)</a></li>
+                                    <li><a href="">Help us translate Steam</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav">
+            <div class="nav-menu">
+              <ul>
+                <li>
+                  <a href=""> Your Store <i class="fas fa-sort-down"></i></a>
+                  <ul class="sub-menu-store">
+                    <!-- menu con của your store thì paste vào đây -->
+                  </ul>
+                </li>
+                <li>
+                  <a href=""> Games &nbsp; <i class="fas fa-sort-down"></i></a>
+                  <ul class="sub-menu-game">
+                    <!-- menu con của games thì paste vào đây -->
+                  </ul>
+                </li>
+                <li>
+                  <a href=""> Software &nbsp; <i class="fas fa-sort-down"></i></a>
+                </li>
+                <li>
+                  <a href=""> Hardware &nbsp; <i class="fas fa-sort-down"></i></a>
+                </li>
+                <li><a href="">News</a></li>
+                <li><a href="">Steam Labs</a></li>
+              </ul>
+            </div>
+            <div class="search">
+              <input type="text" name="" id="" placeholder="search the sotre">
+              <button><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+          <div class="body">
+            <div class="left">
+             <div class="login">
+            <div class="login-left">
+                <h2>Sign In</h2>
+                <p>To an existing Steam account</p>
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Steam username</label>
+                      <input type="email" class="form-control" placeholder="">
+                
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input">
+                      <label class="form-check-label" for="exampleCheck1">Remember me on tihs computer</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                  </form>
+            </div>
+            <div class="line"></div>
+            <div class="login-right">
+                <h2>CREATE</h2>
+                <p>A new free account</p>
+                <p>It's free to join and easy to use.  Continue on to create your Steam account and get Steam, the leading digital solution for PC and Mac gamers.						</p>
+                <button type="submit" class="btn btn-primary">Join Steam</button>
+              </div>
+        </div>
+            <div class="forget-pass">
+                <a href="">Forgot your password?</a>
+              </div>
+          </div>
+          <div class="right">
+             <div class="list">
+            <h2> WHY JOIN STEAM</h2>
+            <ul>
+              <li>Buy and download full retail games</li>
+              <li>Join the Steam Community</li>
+              <li>Chat with your friends while gaming</li>
+              <li>Play your games on any supported platform</li>
+              <li>Schedule a game, tournament, or LAN party</li>
+              <li>Receive automatic game updates, and more!</li>
+            </ul>
+             <img src="https://steamstore-a.akamaihd.net/public/images/v6/why_join_preview.png" alt="">
+            
+            </div>
+            <div class="learn-more">
+              <a href="">Learn more about Steam</a>
+            </div>
+          </div>
+          </div>
+          
+        
+        <div class="footer">
+            <div class="ft-cnt">
+              <hr>
+              <div class="ft-nav">
+                <ul>
+                  <li>
+                    <a href=""> ABOUT STEAM</a>
+                    <ul class="ft-sub-nav1" >
+                      <li><a href="">What's steam</a></li>
+                      <li><a href="">Gifting on steam</a></li>
+                      <li><a href="">The steam Community</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href=""> ABOUT VALVE</a>
+                    <ul class="ft-sub-nav2">
+                      <li><a href="">About Valve</a></li>
+                      <li><a href="">
+                          Business Solutions				</a></li>
+                      <li><a href="">
+                          Steamworks				</a></li>
+                      <li><a href="">
+                          Jobs				</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href=""> HELP </a>
+                    <ul class="ft-sub-nav3">
+                        <li><a href="">Support</a></li>
+                        <li><a href="">
+                            Forums			</a></li>
+                        <li><a href="">
+                            Stats				</a></li>
+                    </ul>
+                  </li>
+                  <li><a href=""> NEWS FEEDS</a></li>
+                </ul>
+              </div>
+              <hr>
+              <div class="ft-mid">
+                <div class="ft-logo">
+                   <a href="">VALVE</a>
+                </div>
+                <div class="text">
+                  <div class="t1"> © 2019 Valve Corporation.  All rights reserved.  All trademarks are property of their respective owners in the US and other countries.</div>
+                  <div class="t2">VAT included in all prices where applicable. &nbsp;&nbsp;   
+                    <a href="">Privacy Policy</a> &nbsp; | &nbsp;
+                    <a href=""> Legal</a> &nbsp; | &nbsp;
+                    <a href="">Steam Subscriber Agreement</a> &nbsp; | &nbsp;
+                    <a href="">Refunds</a>
+                  </div>
+                  <!-- <div class="ft-pic">
+                      <img src="https://www.upsieutoc.com/images/2019/12/06/aaa.png" alt="aaa.png" border="0" />
+                  </div> -->
+                </div>
+              </div>
+              <hr>
+              <div class="ft-bot">
+                <a href="">About Valve &nbsp; | &nbsp;</a> 
+                <a href="">Steamworks &nbsp; | &nbsp;</a>
+                <a href="">Jobs&nbsp; | &nbsp;</a>
+                <a href="">Steam Distribution&nbsp; | &nbsp;</a>
+                <a href="">Gift Cards&nbsp; | &nbsp;</a>
+                <a href=""><i class="fab fa-facebook-square"></i> Steam&nbsp; | &nbsp;</a>
+                <a href=""><i class="fab fa-tumblr-square"></i> @Steam</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+    </body>
+</html>
