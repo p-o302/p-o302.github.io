@@ -1,0 +1,326 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    margin-left: 0;
+    box-sizing: border-box;
+}
+.menu{
+    width: 100%;
+    height: 104px;
+    position: fixed;
+    background-color: rgb(23, 26, 33);
+    box-shadow: 3px 3px 3px rgb(54, 53, 53);
+}
+.logo{
+    line-height: 104px;
+    float: left;
+    width: 30%;
+    height: 100%;
+    text-align: right;
+}
+.menu1{
+    float: left;
+    width: 40%;
+    height: 100%;
+
+}
+.menu1 ul{
+    list-style-type: none;
+    padding: 0;
+    background: rgb(23, 26, 33);
+    cursor: pointer;
+}
+.menu1 ul li{
+    margin-top: 25px;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    width: 15%;
+    text-align: center;
+    position: relative;
+    color: rgb(196, 194, 191);
+}
+
+.menu1 ul li .menu1-2{
+    display: none;
+    position: absolute;
+}
+.menu1 ul li .menu1-2 li{
+    width: 120px !important;
+    height: 35px !important;
+    margin-top: 0px;
+    font-size: 13px;
+    text-align: left;
+    margin-left: 15px;
+    background: rgb(23, 26, 33);
+}
+.menu1 ul li:hover{
+    color: white;
+}
+
+.menu1 ul li:hover > .menu1-2{
+    display: block;
+}
+.menu1-2{
+    box-shadow: 5px 5px 5px rgb(20, 20, 20);
+}
+.menu2{
+    float: left;
+    width: 30%;
+    height: 100%;
+    color: rgb(196, 194, 191);
+    font-size: 14px;
+}
+.menu2-1{
+    float: left;
+    width: 27%;
+    height: 25px;
+    background-color: rgb(92, 126, 16);
+    text-align: center;
+    margin-top: 5px;
+}
+.menu2 .menu2-1:hover{
+    color: white;
+}
+.menu2 .menu2-2:hover{
+    color: white;
+}
+.menu2 .menu2-4:hover{
+    color: white;
+}
+.menu2-2{
+    float: left;
+    width: 10%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.menu2-3{
+    float: left;
+    margin-top: 10px;
+    width: 1px;
+    height: 12%;
+    background-color: rgb(196, 194, 191);
+
+}
+.menu2-4{
+    float: left;
+    width: 25%;
+    padding-left: 5px;
+    margin-top: 5px;
+}
+.trong{
+    width: 100%;height: 120px;
+}
+.conten{
+    width: 100%;
+    height: 1550px;
+    background-image: url("data:image/jpeg;base64,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");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.layout1{
+    font-size: 30px;
+    padding: 15px 0px;
+    font-weight: 500;
+    color: rgb(239, 240, 241);
+}
+.main{
+    margin-left: 17%;
+    margin-right: 30%;
+}
+.layout2{
+    color:rgb(88, 164, 209);
+    font-size: 20px;
+    padding-bottom: 15px;
+    font-weight: 450;
+}
+.layout3{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(11, 23, 38);
+    text-align: center;
+}
+.layout3-0{
+    line-height: 50px;
+    color: white;
+}
+.layout3-1{
+    float: left;
+    width: 30%;
+    height: 40px;
+    background-color: rgb(92, 164, 206);
+    margin-left: 120px;
+    line-height: 40px;
+    border-radius: 3px;
+    color: white;
+}
+.layout3-2{
+    float: left;
+    width: 30%;
+    height: 40px;
+    background-color: rgb(128, 126, 126);
+    margin-left: 50px;
+    line-height: 40px;
+    border-radius: 3px;
+    color: white;
+}
+.conten .main .layout3-1:hover{
+    background-color: rgb(72, 136, 172);
+    cursor: pointer;
+}
+.conten .main .layout3-2:hover{
+    background-color: rgb(72, 136, 172);
+    cursor: pointer;
+}
+.layout4{
+    color: rgb(88, 164, 209);
+    font-size: 15px;
+    font-weight: 450;
+    padding-top: 25px;
+
+}
+.layout5{
+    width: 100%;
+    height: 45px;
+    background-color: #445468;
+    margin: 10px 0px;
+    color: rgb(253, 253, 253);
+}
+.layout5-1{
+    float: left;
+    width: 7.5%;
+    height: 100%;
+    line-height: 41px;
+    padding-left: 10px;
+}
+.layout5-2{
+    float: left;
+    width: 88.5%;
+    height: 100%;
+    line-height: 45px;
+    font-size: 17px;
+    font-weight: 450;
+}
+.layout5-3{
+    float: left;
+    width: 4%;
+    height: 100%;
+    line-height: 45px;
+    color: rgb(160, 179, 203) !important;
+}
+.conten .main .layout5:hover{
+    background-color: rgb(72, 136, 172);
+    cursor: pointer;
+}
+.layout6{
+    color:rgb(253, 253, 253);
+    width: 100%;
+    height: 70px;
+    margin: 10px 0px;
+    background-color: #445468;
+}
+.layout6-1{
+    float: left;
+    width: 96%;
+    height: 100%;
+    line-height: 70px;
+    padding-left: 20px;
+    font-size: 17px;
+    font-weight: 450;
+}
+.layout6-2{
+    float: left;
+    width: 4%;
+    height: 100%;
+    line-height: 70px;
+    color: rgb(160, 179, 203) !important;
+}
+.conten .main .layout6:hover{
+    background-color: rgb(72, 136, 172);
+    cursor: pointer;
+}
+.layout7{
+    margin-top: 70px;
+    width: 100%;
+    height: 60px;
+    background-color: lightslategray;
+}
+#input{
+    width: 100%;
+    height: 100%;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 24px;
+    color: #c6d4df;
+    padding: 10px;
+    background-color: #324965;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 0 #4d5f97;
+    box-sizing: border-box;
+    text-align: start;
+    cursor: default;
+}
+.menu2{
+    background-color:rgb(23, 26, 33) !important;
+    color:rgb(186, 186, 186);
+    margin-top: 0 !important;
+    border-top: solid 1px grey !important;
+    border-bottom: solid 1px grey !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0px !important;
+    text-align: left !important;
+    margin-bottom: 0px !important;
+}
+.menu2-chu{
+    background-color:rgb(25, 37, 51) !important;
+    color:rgb(186, 186, 186);
+    margin-top: 0 !important;
+    border: none !important;
+    border-radius: 0px !important;    
+}
+.chu{
+    font-size: 15px;
+    line-height: 50px;
+    height: 50px;
+    text-align: left !important;
+}
+.chu-2{
+    border-top: solid 1px grey !important;
+    border-bottom: solid 1px grey !important;
+
+}
+p{
+    margin-bottom: 0 !important;
+}
+.chu-3{
+    text-align:left;
+    padding: 10px 0px 10px 15px;
+    color: rgb(186, 186, 186);
+}
+.chu-5{
+    padding-top: 120px;
+    padding-bottom: 0px !important;
+}
+.chu-4{
+    font-size: 12px !important;
+}
+@media all and (min-width: 990px)
+{
+    .menu{
+        width: 100%;
+    }
+    .conten{
+        width: 100%;
+    }
+}
+@media all and (max-width: 990px)
+{
+    .menu{
+        width: 100%;
+    }
+    .conten .main{
+        margin-left: 5%;
+    }
+}
