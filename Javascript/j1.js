@@ -91,7 +91,7 @@ function PrintPrime(){
     var b = parseInt(a);
     var Arr = [];
     if(b < 0){
-        document.getElementById("errorNum").innerHTML = "Vui lòng nhập lại! ";
+        document.getElementById("errorNum").innerHTML = "Nnhập lại n. ";
     }else{
         document.getElementById("errorNum").innerHTML = "";
         for(var i = 1; i <= b; i++){
@@ -100,5 +100,5 @@ function PrintPrime(){
             }
         }
     }
-    document.getElementById("snt").innerHTML = p;
+    document.getElementById("snt").innerHTML = Arr;
 }
