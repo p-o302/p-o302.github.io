@@ -82,8 +82,12 @@
 .menu2 .menu2-1:hover{
     color: white;
 }
-.menu2 .menu2-2:hover{
+.menu2 .menu2-2 a:hover{
     color: white;
+}
+.menu2-2 a{
+    text-decoration: none !important;
+    color: rgb(196, 194, 191);
 }
 .menu2 .menu2-4:hover{
     color: white;

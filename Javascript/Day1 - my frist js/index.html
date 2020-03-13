@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="j1.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="ex1">
+              <p>Yêu cầu :</p>
+              <p>1. Giải phương trình bậc 2</p><br>
+              <input type="number" id="numA" placeholder="a"> x^2 +
+              <input type="number" id="numB" placeholder="b"> x + 
+              <input type="number" id="numC" placeholder="c"> = 0
+              <br>
+              <button type="reset" onclick="reset();">Reset</button>
+              <button type="submit" onclick="PTb2();">Submit</button>
+              <p>Kết quả: <span id="PTb2"></span></p><br>
+            </div>
+            <hr>
+            <div class="ex2">
+              <p>2. Nhập ngày, tháng, năm. In ra số ngày của tháng.</p><br>
+               Month: <input type="number" id="month">
+                Year : <input type="number" id="year">
+                <span id="error"></span>
+                <br>
+                <button type="reset">Reset</button>
+              <button type="submit" onclick="DateofMonth(); return false;" >Submit</button>
+              <p>Kết quả: <span id="date" ></span></p>
+            </div><br><hr>
+            <div class="ex3">
+              <p>3. Nhập số nguyên n. Xuất ra các số nguyên tố từ 1 đến n ( mỗi số cách nhau 1 khoảng trắng). Số không có số nào, xuất -1.</p>
+             <br>
+              Nhập n: <input type="number" id="Num">
+              <span id="errorNum"></span>
+              <br>
+                <button type="reset">Reset</button>
+              <button type="submit" onclick="PrintPrime" >Submit</button>
+              <p>Kết quả: <span id="snt" ></span></p>
+            </div>
+    </div>
+    <div class="separate">
+
+    </div>
+    <div class="right">
+      <p> Yêu cầu:</p>
+      <p> Tạo slide từ list object</p>
+    </div>
+    </div>
+</body>
+</html>

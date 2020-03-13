@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    display: flex;
+}
+.left{
+    width: 50%;
+}
+.separate{
+    width: 1px;
+    height: 600px;
+    background-color: black;
+}
+.left hr{
+    width: 99.5%;
+}
+p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+input{
+    width: 50px;
+    margin-left: 10px;
+}
+button{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#error{
+    color: red;
+}
+#errorNum{
+    color: red;
+}
