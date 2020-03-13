@@ -91,7 +91,7 @@ function PrintPrime(){
     var b = parseInt(a);
     var Arr = []; // mảng để in ra các snt từ 1 -> n
     if(b < 0){
-        document.getElementById("errorNum").innerHTML = "Nnhập lại n. ";
+        document.getElementById("errorNum").innerHTML = "Nhập lại n. ";
     }else{
         document.getElementById("errorNum").innerHTML = "";
         for(var i = 1; i <= b; i++){
