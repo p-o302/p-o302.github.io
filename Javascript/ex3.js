@@ -22,7 +22,8 @@ function showText(){
 	pre.innerHTML	 = myString;
 
 }
-function displayform(){
+function displayform(){ 
+    // hiển thị form khi thay đổi số liệu
 	let viewDetail = document.getElementsByClassName('viewForm')[0];
     viewDetail.style.display = "block";
     nameForm.title.value = text.title;
@@ -52,7 +53,6 @@ function saveIssue(){
 	text.estimate = nameForm.estimate.value;
 	hideViewDetail();
 	showText();
-
 }
 function getCheckboxValue(){
 	 var allow= document.getElementsByName('allowFor');
