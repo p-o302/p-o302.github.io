@@ -1,50 +1,70 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import $ from 'jquery';
+import Messages from './message-list';
+import Input from './input';
+import _map from 'lodash/map';
+import io from 'socket.io-client';
+
 import './App.css';
-import ThumbImg from './components/ThumbImg';
 
-class App extends Component {
+export default class App extends React.Component {
+   constructor(props) {
+       super(props);
+       //Khởi tạo state,
+       this.state = {
+           messages: [
+               {id: 1, userId: 0, message: 'Hello'}
+           ],
+           user: null,
+       }
+       this.socket = null;
+   }
+   //Connetct với server nodejs, thông qua socket.io
+   componentWillMount() {
+       this.socket = io('localhost:6969');
+       this.socket.on('id', res => this.setState({user: res})) // lắng nghe event có tên 'id'
+       this.socket.on('newMessage', (response) => {this.newMessage(response)}); //lắng nghe event 'newMessage' và gọi hàm newMessage khi có event
+   }
+   //Khi có tin nhắn mới, sẽ push tin nhắn vào state mesgages, và nó sẽ được render ra màn hình
+   newMessage(m) {
+       const messages = this.state.messages;
+       let ids = _map(messages, 'id');
+       let max = Math.max(...ids);
+       messages.push({
+           id: max+1,
+           userId: m.id,
+           message: m.data
+       });
 
-  constructor(props){
-    super(props);
-    this.state = {
-      path: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRe_8K_qVr2rD7mzFgU5Gu0F2tGkhQ25weQQygNpals8MQlNbcZ'
-    }
-  }
+       let objMessage = $('.messages');
+       if (objMessage[0].scrollHeight - objMessage[0].scrollTop === objMessage[0].clientHeight ) {
+           this.setState({messages});
+           objMessage.animate({ scrollTop: objMessage.prop('scrollHeight') }, 300); //tạo hiệu ứng cuộn khi có tin nhắn mới
 
-  componentDidMount(){
-    let thumbImg = document.querySelectorAll('.thumb-img .pic img');
-    thumbImg.forEach((item) => {
-      item.addEventListener('click', (ev) => {
-        this.setState({ path: ev.target.src })
-      })
-    })
-  }
+       } else {
+           this.setState({messages});
+           if (m.id === this.state.user) {
+               objMessage.animate({ scrollTop: objMessage.prop('scrollHeight') }, 300);
+           }
+       }
+   }
+   //Gửi event socket newMessage với dữ liệu là nội dung tin nhắn
+   sendnewMessage(m) {
+       if (m.value) {
+           this.socket.emit("newMessage", m.value); //gửi event về server
+           m.value = ""; 
+       }
+   }
 
-  render() {
-    const { path } = this.state;
-    return (
-      <div className="container">
-        <div className="left">
-          <ThumbImg path={'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRe_8K_qVr2rD7mzFgU5Gu0F2tGkhQ25weQQygNpals8MQlNbcZ'} />
-          <ThumbImg path={'https://downloadwap.com/thumbs2/wallpapers/p2/2019/drawings/44/f4962e4813034253.jpg'} />
-          <ThumbImg path={'https://i.pinimg.com/236x/ee/7e/49/ee7e49c14142e961e04338fc7f8a659e--chim-pest-control.jpg'} />
-        </div>
-        <div className="center">
-          <div className="show-img">
-            <div className="pic">
-              <img src={path} alt=""></img>
-            </div>
-          </div>
-        </div>
-        <div className="right">
-          <ThumbImg path={'https://www.vippng.com/png/full/201-2013416_black-cc-nhn-vt-trong-larva.png'} />
-          <ThumbImg path={'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSFPsyTl-LC1RmQXUqgz6oOJtsaSAl8s5hLAVvCzEiOe6QxFCkl'} />
-          <ThumbImg path={'https://i.pinimg.com/originals/54/5b/86/545b86044f23016841c21a3b822ca1d4.jpg'} />
-        </div>
-      </div>
-    )
-  }
+   render () {
+       return (
+          <div className="app__content">
+             <h1>chat box</h1>
+             <div className="chat_window">
+                 <Messages user={this.state.user} messages={this.state.messages} typing={this.state.typing}/>
+                 <Input sendMessage={this.sendnewMessage.bind(this)}/>
+             </div>
+           </div>
+       )
+   }
 }
-
-export default App;
