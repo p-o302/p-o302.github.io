@@ -1,70 +1,98 @@
-import React from 'react';
-import $ from 'jquery';
-import Messages from './message-list';
-import Input from './input';
-import _map from 'lodash/map';
-import io from 'socket.io-client';
+import React from "react";
+import classnames from "classnames";
+import "./App.css";
 
-import './App.css';
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      messages: [
+        { content: 'Hello', isLeft: true }
+      ]
+    }
+  }
 
-export default class App extends React.Component {
-   constructor(props) {
-       super(props);
-       //Khởi tạo state,
-       this.state = {
-           messages: [
-               {id: 1, userId: 0, message: 'Hello'}
-           ],
-           user: null,
-       }
-       this.socket = null;
-   }
-   //Connetct với server nodejs, thông qua socket.io
-   componentWillMount() {
-       this.socket = io('localhost:6969');
-       this.socket.on('id', res => this.setState({user: res})) // lắng nghe event có tên 'id'
-       this.socket.on('newMessage', (response) => {this.newMessage(response)}); //lắng nghe event 'newMessage' và gọi hàm newMessage khi có event
-   }
-   //Khi có tin nhắn mới, sẽ push tin nhắn vào state mesgages, và nó sẽ được render ra màn hình
-   newMessage(m) {
-       const messages = this.state.messages;
-       let ids = _map(messages, 'id');
-       let max = Math.max(...ids);
-       messages.push({
-           id: max+1,
-           userId: m.id,
-           message: m.data
-       });
+  componentDidMount(){
+    let msg = document.querySelector('.message_input');
+    let btnSend = document.querySelector('.send_message');
+    
+    btnSend.addEventListener('click', () => {
+      if(msg.value !== ''){
+        this.sendMessage(msg);
+      }
+    });
 
-       let objMessage = $('.messages');
-       if (objMessage[0].scrollHeight - objMessage[0].scrollTop === objMessage[0].clientHeight ) {
-           this.setState({messages});
-           objMessage.animate({ scrollTop: objMessage.prop('scrollHeight') }, 300); //tạo hiệu ứng cuộn khi có tin nhắn mới
+    msg.addEventListener('keyup', (ev) => {
+      if(ev.which === 13 && msg.value !== ''){
+        this.sendMessage(msg);
+      }
+    });
+  }
 
-       } else {
-           this.setState({messages});
-           if (m.id === this.state.user) {
-               objMessage.animate({ scrollTop: objMessage.prop('scrollHeight') }, 300);
-           }
-       }
-   }
-   //Gửi event socket newMessage với dữ liệu là nội dung tin nhắn
-   sendnewMessage(m) {
-       if (m.value) {
-           this.socket.emit("newMessage", m.value); //gửi event về server
-           m.value = ""; 
-       }
-   }
+  sendMessage(msg){
+    let sectorMsg = document.querySelector('.messages');
 
-   render () {
-       return (
-          <div className="app__content">
-             <h1>chat box</h1>
-             <div className="chat_window">
-                 <Messages user={this.state.user} messages={this.state.messages} typing={this.state.typing}/>
-                 <Input sendMessage={this.sendnewMessage.bind(this)}/>
-             </div>
-           </div>
-       )
-   }
+    let { messages } = this.state;
+
+    let newMsg = {};
+    newMsg.content = msg.value;
+    newMsg.isLeft = !messages[messages.length - 1].isLeft;
+
+    this.setState({
+      messages: messages.concat(newMsg)
+    });
+
+    msg.value = '';
+    sectorMsg.scrollTo(0, sectorMsg.scrollHeight);
+  }
+
+  render() {
+    let { messages } = this.state;
+
+    return (
+      <div className="App">
+        <div className="chat_window">
+          <div className="top_menu">
+            <div className="buttons">
+              <div className="button close"></div>
+              <div className="button minimize"></div>
+              <div className="button maximize"></div>
+            </div>
+            <div className="title">Chat</div>
+          </div>
+          <ul className="messages">
+            {
+              this.state.messages.length > 0 && messages.map((item, index) => {
+                
+                let direct = (item.isLeft === true) ? 'left' : 'right';
+
+                return (
+                  <li key={index} className={classnames('message', 'appeared', direct)} >
+                    <div className="avatar"></div>
+                    <div className="text_wrapper">
+                      <div className="text">{item.content}</div>
+                    </div>
+                  </li>
+                )
+              })
+            }
+          </ul>
+          <div className="bottom_wrapper clearfix">
+            <div className="message_input_wrapper">
+              <input
+                className="message_input"
+                placeholder="Type your message here..."
+              />
+            </div>
+            <div className="send_message">
+              <div className="icon"></div>
+              <div className="text">Send</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
+
+export default App;
