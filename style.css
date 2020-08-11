@@ -1,19 +1,37 @@
 *{
-    margin: 0 !important;
+    margin: 0;
     padding: 0;
 }
 .container{
+    width: 100%;
     font-family: sans-serif;
 }
-
 .menu{
     width: 100%;
-    height: 50px;
     background-color: black;
-    position: fixed;
     list-style-type: none;
-    display: flex;
+    height: 50px;
+   position: fixed;
+   position: absolute;
 }
 .menu li{
-    
+    display: inline-table;
+    width: 100px; 
+    text-align: center;
+}
+a{
+    color: white;
+    line-height: 50px;
+    text-decoration: none;
+}
+.menu li:hover{
+    background-color: gray;
+}
+.menu2{
+    background-color: gray;
+    position: relative;
+}
+
+.menu li:hover .menu2{
+    display: block;
 }
