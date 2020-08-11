@@ -12,12 +12,13 @@
     list-style-type: none;
     height: 50px;
    position: fixed;
-   position: absolute;
+  
 }
 .menu li{
     display: inline-table;
     width: 100px; 
     text-align: center;
+    position: relative;
 }
 a{
     color: white;
@@ -27,11 +28,166 @@ a{
 .menu li:hover{
     background-color: gray;
 }
-.menu2{
-    background-color: gray;
-    position: relative;
+.menu a:hover{
+    color: black;
 }
-
+.menu2{
+    background-color: rgb(207, 204, 204);
+    display: none;
+    position: absolute;
+}
 .menu li:hover .menu2{
     display: block;
+}
+.pic img{
+    width: 100%;
+    height: 800px;
+    /* position: relative; */
+    /* background-image: url("https://www.w3schools.com/w3images/la.jpg"); */
+}
+.txt{
+    /* position: absolute; */
+    color: rgb(255, 255, 255);
+    margin-top: -80px;
+    font-size: 20px;
+    text-align: center;
+}
+.cnt{
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.cnt .title{
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.a1{
+    font-style: italic;
+    color: gray;
+    font-size: 15px;
+    position: relative;
+    margin-top: 20px;
+}
+.txt1{
+    width: 50%;
+    margin-left: 25%;
+    text-align: justify;
+    margin-top: 50px;
+}
+.product{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+.sp{
+    width: 200px;
+    margin-left: 20px;
+}
+.img{
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url("https://i.pinimg.com/236x/e1/70/de/e170de3e848eb9eee6c7b95467f1639c--animation-google-larva-cartoon.jpg");
+}
+#p2{
+    background-color: black;
+    height: 900px;
+}
+#tit{
+    margin-top: 100px;
+    color: white;
+}
+.date{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin-top: 50px;
+     width: 600px;
+     margin-left: 400px;
+}
+.date1{
+   height: 40px;
+   line-height: 40px;
+   margin-left: -400px;
+   float: left;
+}
+.sold_out{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    margin-left: 15px;
+}
+hr{
+    width: 58%;
+    margin-left: 400px;
+}
+.num{
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 3px;
+    height: 20px;
+    font-size: 10px;
+    margin-top: 6px;
+    line-height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    float: right;
+    margin-right: 16px!important;
+    text-align: center;
+}
+.product2{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    height: 350px;
+}
+#sp_img{
+    width: 200px;
+    margin-left: 20px;
+    background-color: white;
+}
+.img1{
+    width: 100%;
+    height: 150px;
+    background-size: contain;
+    background-image: url("https://i.pinimg.com/236x/5a/9b/19/5a9b193e80b050b2c5deead9868f152f.jpg");
+}
+.img1:hover{
+    opacity: 0.7;
+}
+.in4{
+    text-align: left;
+    margin-left: 10px;
+}
+.city{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.time{
+    font-size: 13px;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+.xxx{
+    margin-top: 10px;
+    font-size: 15px;
+    width: 80%;
+}
+.in4 span{
+    position: absolute;
+    margin-top: 20px;
+    color: white;
+    /* padding: 7px; */
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 10px;
+    background-color: black;
+}
+.in4 span:hover{
+    background-color: gray;
+    color: black;
 }
