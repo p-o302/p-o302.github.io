@@ -210,16 +210,16 @@ hr{
     float: left;
     width: 410px;
 }
-.log span{
+.send{
     color: white;
     width: 80px;
     height: 40px;
     font-size: 14px;
     line-height: 40px;
-    padding: 10px;
+    padding: 5px;
     background-color: black;
-    margin-left: 300px;
-    margin-top: 20px;
+    margin-left: -100px;
+    margin-top: 130px;
 }
 .send:hover{
     background-color: gray;
