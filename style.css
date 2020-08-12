@@ -173,14 +173,14 @@ hr{
     width: 80%;
 }
 .in4 span{
-    position: absolute;
+    /* position: absolute; */
     margin-top: 20px;
     color: white;
     width: 80px;
     height: 40px;
     font-size: 14px;
     line-height: 40px;
-    padding-left: 10px;
+    padding: 10px;
     background-color: black;
 }
 .in4 span:hover{
@@ -211,18 +211,17 @@ hr{
     width: 410px;
 }
 .log span{
-    position: absolute;
-    margin-top: 50px;
     color: white;
     width: 80px;
     height: 40px;
     font-size: 14px;
     line-height: 40px;
-    padding-left: 5x;
+    padding: 10px;
     background-color: black;
-    margin-left: -80PX;
+    margin-left: 300px;
+    margin-top: 20px;
 }
-.log span:hover{
+.send:hover{
     background-color: gray;
     color: black;
 }
