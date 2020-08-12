@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Toidicode.com String</title>
+    </head>
+    <body>
+        <p id="des">Chào Bông nhé</p>
+        <button onclick="getResult()">Click</button>
+        <script type="text/javascript">
+            function getResult()
+            {
+                var des = document.getElementById('des').innerText;
+                var position = des.indexOf(" ") -1;
+                alert('có số từ trong des là: ' + position );
+            }
+        </script>
+    </body>
+    </html>
