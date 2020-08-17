@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+	function UCLN()
+	{
+		var a=document.getElementById("so1").value;
+		var b=document.getElementById("so2").value;
+		
+		if(a==0||b==0)
+			{
+				
+				alert("Ước chung lớn nhất của là: "+(a+b));
+			}
+		while(a!=b)
+		{
+				if(a>b)
+					{
+						a-=b;
+					}
+				else
+						b-=a;
+		}
+		 	alert("Ước chung lớn nhất là: "+a);
+			
+    }
+</script>
+    </script>
+    <form action="">
+        <input type="text" name="" id="so1" placeholder="so 1"><br>
+        <input type="text" name="" id="so2" placeholder="so2"><br><br>
+        
+        <input type="button" value="Submit" onclick=" UCLN();" >
+    </form>
+</body>
+</html>
