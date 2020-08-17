@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        
+       <p> username: <input type="text" id="username" ></p>
+       <p> password: <input type="text" name="" id="password" ></p>
+       <p>Email: <input  type="text" name="" id="email"></p>
+       <p>Phone: <input type="text" name="" id="sdt"> </p>
+       <input type="submit" name="" id="submit" onclick="check();">
+    </form>
+    <script type="text/javascript">
+        function check(){
+            var u=document.getElementById("username").value;
+            var p=document.getElementById("password").value;
+            var e=document.getElementById("email").value;
+            var s=document.getElementById("sdt").value;
+            if(u=="")
+                {
+                    alert("Username không được để trống");
+                    return false;
+                }
+            if(p=="")
+                {
+                    alert("Password không được để trống");
+                    return false;
+                }
+            reg=/^(?=.\D)(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+            if(reg.test(password.value)==false)
+                {
+                    alert("Password không bắt đầu bằng 'SỐ', phải ít nhất '8' kí tự và có ít nhất một kí tự 'in hoa'!!Bạn nhập lại nhé");
+                    return false;
+                }
+            if(e=="")
+                {
+                    alert("Email không được để trống");
+                    return false;
+                }
+             reg = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            if(reg.test(email.value)==false)
+                {
+                    alert('Hay nhap dia chi email hop le.\nExample@gmail.com');
+                    return false;
+                }
+            if(s=="")
+                {
+                    alert("Sđt không được để trống");
+                    return false;
+                }
+            reg=/^\d{10}$/;
+            if(reg.test(sdt.value)==false)
+                {
+                    alert("Sđt chỉ chứa kí tự là chữ số và đủ 10 kí tự");
+                    return false;
+                }
+            else
+            {
+            alert("Đăng nhập thành công. Chúc bạn một ngày tốt lành (^-^)");
+            return true;
+            }
+            
+            }
+    </script>
+
+</body>
+</html>
