@@ -6,36 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    <script type="text/javascript">
-	function UCLN()
-	{
-		var a=document.getElementById("so1").value;
-		var b=document.getElementById("so2").value;
-		
-		if(a==0||b==0)
-			{
-				
-				alert("Ước chung lớn nhất của là: "+(a+b));
-			}
-		while(a!=b)
+	<script type="text/javascript">
+		var a,b;
+		function UCLN(x,y)
 		{
-				if(a>b)
-					{
-						a-=b;
-					}
-				else
-						b-=a;
-		}
-		 	alert("Ước chung lớn nhất là: "+a);
-			
-    }
-</script>
-    </script>
-    <form action="">
-        <input type="text" name="" id="so1" placeholder="so 1"><br>
-        <input type="text" name="" id="so2" placeholder="so2"><br><br>
-        
-        <input type="button" value="Submit" onclick=" UCLN();" >
-    </form>
+			//	var a=document.getElementById("so1").value;
+			// var b=document.getElementById("so2").value;
+
+			// if(a==0||b==0)
+			// 	{
+					
+			// 		alert("Ước chung lớn nhất của là: "+(a+b));
+			// 	}
+			while(x!=y)
+			{
+				if(x>y) x-=y;
+				else x-=y;
+			}
+				return x;
+		}	
+		a = prompt(' a = ');
+		b = prompt(' b = ');
+		alert(' UCLN: ' +UCLN(a,b));
+	</script>
+	
+		<!-- <form action="">
+			<input type="text" name="" id="so1" placeholder="so 1"><br>
+			<input type="text" name="" id="so2" placeholder="so2"><br><br>
+			<input type="submit" value="Submit" onclick="UCLN(a,b);" >
+		</form> -->
 </body>
 </html>
