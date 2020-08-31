@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <p>Ten: <input type="text" id="ten"></p>
+        <p>So dien: <input type="text" id="dien"></p>
+        <p><input type="button" value="Submit" onclick="tien();"></p>
+    </form>
+
+    
+    <script type="text/javascript">
+        function tien(){
+            var name = document.getElementById('ten').value;
+            var power = document.getElementById('dien').value;
+            var money1 = 1000, money2 = 700, totalMoney=1;
+            if(name == ''){
+                alert(' Ten ho gia dinh la: ');
+                return false;
+            }
+            if(power == ''){
+                alert(' So dien da dung la: ');
+                return false;
+            }
+            if(power>=1000){
+                totalMoney=power*money1;
+                alert(' So tien phai nop la: '+totalMoney);
+                return true;
+            }
+            else{
+                totalMoney= power*money2;
+                alert(' So tien phai nop la: '+totalMoney);
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
