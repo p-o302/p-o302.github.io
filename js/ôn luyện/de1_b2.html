@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script type="text/javascript">
+    function  check(){
+        let u = document.getElementById('user').value,
+            p = document.getElementById('pass').value,
+            n = document.getElementById('sdt').value,
+            f = document.getElementById('file').value;
+            /* số điện thoại chỉ đc viết số, dấu ".", dấu "-";
+                file cho phép nhập a-zA-Z, \., \/, \-;
+        */
+        if( u == '')
+        {
+            alert(' User ko dc de trong'); return false;
+        } 
+        if( p == '') 
+        {
+            alert(' pass ko dc de trong'); return false;
+        }
+        if( n == '')
+        {
+            alert(' sdt ko dc de trong'); return false;
+        } 
+        if( f == '')
+        {
+            alert(' file ko dc de trong'); return false;
+        } 
+        reg = /(?=.*[0-9])(?=.*[-\.])/g;
+        if(reg.test(sdt.value)==false)
+        {
+            alert(' chua dung yc');
+            return false;
+        }
+        reg = /(?=.*[a-z])(?=.*[A-Z])(?=.*[\.\-\,])/i;
+        if(reg.test(file.value)==false){
+            alert(' chuwa dung yc cua file'); 
+            return false;
+        }
+        else{
+            alert(' Thanh cong!'); 
+            return true;
+        }
+    }
+</script>
+<body>
+    Tên đăng nhập: <input type="text" name="" id="user"> <br>
+    Mật khẩu: <input type="text" name="" id="pass"> <br>
+    Giới tính <input type="radio" name="" id=""> Nam <input type="radio" name="" id=""> Nữ <br>
+    Số điện thoại: <input type="text" name="" id="sdt"> <br>
+    File đính kèm: <input type="text" name="" id="file"> <br>
+    Giới thiệu: <textarea type="" name="" id=""></textarea> <br>
+    <input type="submit" value="Gửi" onclick="check();"> <input type="reset" value="Hủy bỏ">
+</body>
+</html>
