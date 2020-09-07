@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>bai6t</title>
+<script type="text/javascript">
+	function check(){
+		var u=document.getElementById("username").value;
+		var p=document.getElementById("password").value;
+		var e=document.getElementById("email").value;
+		var s=document.getElementById("sdt").value;
+		if(u=="")
+			{
+				alert("Username không được để trống");
+				return false;
+			}
+		if(p=="")
+			{
+				alert("Password không được để trống");
+				return false;
+			}
+		reg=/^(?=.\D)(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+		if(reg.test(password.value)==false)
+			{
+				alert("Password không bắt đầu bằng 'SỐ', phải ít nhất '8' kí tự và có ít nhất một kí tự 'in hoa'!!Bạn nhập lại nhé");
+				return false;
+			}
+		if(e=="")
+			{
+				alert("Email không được để trống");
+				return false;
+			}
+		 reg = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		if(reg.test(email.value)==false)
+			{
+				alert('Hay nhap dia chi email hop le.\nExample@gmail.com');
+				return false;
+			}
+		if(s=="")
+			{
+				alert("Sđt không được để trống");
+				return false;
+			}
+		reg=/^\d{10}$/;
+		if(reg.test(sdt.value)==false)
+			{
+				alert("Sđt chỉ chứa kí tự là chữ số và đủ 10 kí tự");
+				return false;
+			}
+		else
+		{
+		alert("Đăng nhập thành công. Chúc bạn một ngày tốt lành (^-^)");
+		return true;
+		}
+		
+		}
+</script>
+</head>
+
+<body>
+	<form name="" method="get" action="">
+    <table width="389" border="0" bgcolor="#0099CC" align="center">
+  <tr>
+    <th width="76" height="36" align="left">Username</th>
+    <th width="303" align="left"><input type="text" name="username" id="username" /></th>
+  </tr>
+  <tr>
+    <th height="34"align="left" scope="row">Password</th>
+    <td><input type="text" name="password" id="password" /></td>
+  </tr>
+  <tr>
+    <th height="38"align="left" scope="row">Email</th>
+    <td><input type="text" name="email" id="email" /></td>
+  </tr>
+  <tr>
+    <th height="35"align="left" scope="row">Sđt</th>
+    <td><input type="text" name="sdt" id="sdt" /></td>
+  </tr>
+  <tr>
+    <th height="34" colspan="2" align="left" scope="row"><button onclick="return check();" >Onclick</button></th>
+    
+  </tr>
+</table>
+    </form>
+</body>
+</html>
