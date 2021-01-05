@@ -1,6 +1,6 @@
-var inputs = document.forms['register'].getElementsByTagName('input');
-  var run_onchange = false;
-  function valid(){
+   var inputs = document.forms['register'].getElementsByTagName('input');
+   var run_onchange = false;
+   function valid(){
    var errors = false;
    var reg_mail = /^[A-Za-z0-9]+([_\.\-]?[A-Za-z0-9])*@[A-Za-z0-9]+([\.\-]?[A-Za-z0-9]+)*(\.[A-Za-z]+)+$/;
    for(var i=0; i<inputs.length; i++){

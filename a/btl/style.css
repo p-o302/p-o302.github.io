@@ -1,0 +1,390 @@
+*{
+    margin: 0px auto;
+    padding-left: 10px ;
+    padding-right: 10px;
+}
+.header{
+    width: 100%;
+    height: 700px;
+    background-image: url('https://images.pexels.com/photos/531321/pexels-photo-531321.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    border-radius: 20px;
+    /* background-repeat: no-repeat; */
+}
+
+.text{
+    text-align: center;
+    margin-top: 250px ;
+}
+.text h1{
+    color: white;
+    font-weight: bold;
+    font-size: 55px;
+}
+.text .btn{
+    text-align: center;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    line-height: 30px;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(90, 139, 92);
+}
+.text .btn:hover{
+    background: rgba(22, 16, 16,0.8);
+    border: 1px solid white;
+}
+.text p{
+    color: white;
+    font-family:monospace;
+    font-size: 15px;
+}
+.menu, .menu-responsive{
+     position: fixed !important;
+      width: 97%;
+}
+nav .menu ul li:first-child{
+    position: absolute;
+    left: 100px;
+    top: -5px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* padding-left: 50px; */
+}
+
+nav .menu ul li:first-child img{
+     width: 300px;
+    height: 50px;
+}
+.logo-responsive{
+    display: flex;
+}  
+.logo-responsive img{
+    width: 150px;
+    height: 35px;
+    margin-top: 5px;
+}
+
+nav{
+    width: 100% !important;
+    margin-left: -20px ;
+    position: absolute;
+    z-index: 10;
+}
+.menu ul li a:hover, .menu-responsive ul li a:hover{
+    color: #fff;
+}
+nav .menu{
+    background: rgba(0, 0, 0,0.6);
+}
+nav .menu ul{
+    text-align: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav .menu ul li{
+    line-height: 70px;
+    display: inline;
+}
+nav .menu ul li a{
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+    padding: 15px;
+    text-transform: uppercase;
+}   
+.menu-responsive{
+    width: 94%;
+    margin-left: 8px;
+    background: rgba(0, 0, 0,0.6);
+}
+nav .menu-responsive .title{
+    line-height: 50px;
+    background: #000;
+    color: #fff;
+    text-align: right;
+    cursor: pointer;
+}
+.menu-responsive .title i{
+    border: 1px solid #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0,0.6);;
+}
+nav .menu-responsive ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #000;
+    display: none;
+    text-align: left;
+}
+nav .menu-responsive ul li{
+    line-height: 35px;
+    border-top: 1px solid #fff;
+}
+nav .menu-responsive ul li a{
+    text-decoration: none;
+    padding-left: 15px;
+    color: rgb(199, 199, 199);
+    text-transform: uppercase;
+}
+nav .menu-responsive{
+    display: none;
+}
+@media all and (max-width: 990px){
+    .menu{
+        display: none;
+    }
+    .menu-responsive{
+        width: 90%;
+        display: block !important;
+    }
+}
+
+.open{
+    margin-top: 200px;
+    text-align: center;
+    font-family:'Trebuchet MS', sans-serif;
+}
+.open h1{
+    font-weight: bold;
+}
+.cnt{
+    margin-top: 100px;
+}
+.select-feild ul{
+    margin-top: 70px;
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    width: 50%;
+}
+.select-feild ul li{
+    cursor: pointer;
+}
+            
+            .left{
+                margin-top: 20px;
+                /* margin-left: 20px; */
+                height: 350px;
+                background:  rgb(137,185,51);
+            }
+            .right{
+                margin-top: 20px;
+                /* margin-left:
+                 20px; */
+                height: 350px;background: rgb(86, 108, 180);}
+            .main{
+                margin-top: 20px;
+                /* margin-left: 20px; */
+                height: 350px;
+                background:rgb(201, 78, 201);;
+            }
+.left, .right, .main{
+    border-radius: 10px;
+}
+.sp img{
+    position: relative;
+    margin: 25px auto;
+    margin-left: -10px !important;
+    /* margin: 20px auto; */
+    width: 100%;
+    height: 300px;
+    /* background-image: url('https://xuongkhopxk3.com/wp-content/uploads/2019/12/chua-dau-vai-gay-bang-thuoc-tay-y.png');
+    background-size: cover; */
+}
+.detail{
+    position: absolute;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 11px;
+    height: 300px;
+    background: #000;
+    z-index: 2000;
+    opacity: 0.6;
+    text-align: center;
+    display: none;
+}
+.detail iframe{
+    position: absolute;
+    margin-top: 20px;
+    width: 100px;
+    margin-left: -50px;
+    height: 100px;
+}
+/* .sp .detail:hover{
+    display: block;
+} */
+.detail a{
+    border-radius: 15px;
+    border: 1px solid #8AB92D;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    margin: 150px auto;
+    margin-left: -50px;
+    font-weight: bold;
+    font-family: cursive;
+    z-index: 2500;
+}
+.detail a:hover{
+    border: 1px white solid;
+    opacity: none;
+    color: #000;
+    background-color:#8AB92D;
+}
+.about{
+    margin-top: 200px;
+}
+.background{
+    /* background: rgb(22, 16, 16); */
+    height: 400px;
+    width: 100%;
+    background-image: url('https://img.freepik.com/free-vector/black-dark-3d-low-poly-geometric-background_79145-393.jpg?size=626&ext=jpg');
+    background-size: cover;
+    text-align: center;
+}
+.background h1{
+    padding-top: 70px;
+}
+.background h1, .background p{
+    color: rgb(194, 194, 194);
+    font-family:'Trebuchet MS', sans-serif;
+}
+.duoi{
+    margin-top: -150px;
+    width: 80%;
+    margin-left: 140px !important;
+}
+.duoi .left, .duoi .main, .duoi .right{
+    margin-top: 20px;
+    background:#fff;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    box-shadow: 0 2px 5px 4px rgba(95, 89, 89, 0.1);
+}
+.duoi .left img, .duoi .main img, .duoi .right img{
+    width: 100%;
+    height: 30%;
+}
+.duoi .left p, .duoi .main p, .duoi .right p{
+    font-family: arial;
+    font-weight: bold;
+}
+.txt{
+    font-size: 13px;
+    text-align: justify;
+    font-weight: normal !important  ;
+}
+.feeback .left, .feeback .main, .feeback .right{
+    background-color: #fff;
+}
+.feeback .sp img{
+    width: 150px;
+    height: 70px;
+}
+.feeback .sp p{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: monospace;
+}
+.far{
+    color: rgb(252, 227, 0);
+}
+.fas{
+    color: rgb(255, 230, 0);
+}
+.txt1{
+    font-family: tahoma !important;
+    font-size: 13px !important;
+    font-weight: normal !important  ;
+}
+.map img{
+    width: 100%;
+}
+.footer{
+    margin-top: 150px;
+    height: 500px;
+    background: #000;
+    margin-bottom: 50px;
+}
+.footer .left, .footer .main, .footer .right{
+    padding: 50px;
+    margin-top: 70px;
+    background: none;
+    /* margin-left: 20px; */
+}
+@media all and (max-width:998px){
+    .footer .left, .footer .main{
+        height: 160px;
+        margin-top: 10px;
+    }
+    .footer .txt1{
+        width: 200px;
+    }
+    .footer .right{
+        height: 180px;
+        padding-left: 80px;
+    }
+}
+.footer .txt1{
+    color: rgb(114, 114, 114);
+    margin-top: 20px;
+    width: 400px;
+    margin-left: 20px;
+    font-size: 15px !important;
+}
+.f-title{
+    color: white;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 20px !important;
+}
+.footer input[type=text]{
+    margin-top: 30px;
+    width: 70%;
+    margin-left: 20px;
+    background-color: rgb(158, 158, 158);
+}
+.submit{
+    background-color: #8AB92D;
+    padding: 3px;font-size: 15px;
+    cursor: pointer;
+
+}
+.submit:hover{
+    border: 2px solid yellowgreen;
+}
+.submit i{
+
+    color: white;
+}
+.right i{
+    margin-left: 10px;
+    color: white;
+    margin-top: 20px;
+    font-size: 20px !important;
+    cursor: pointer;
+}
+@media all and (max-width:768px){
+    .footer .left{
+        height: 160px;
+        margin-top: 0px;
+    }
+     .footer .main, .footer .right{
+        height: 140px;
+        margin-top: 0px;
+        /* padding: 20px; */
+    }
+}
+
+
+
+
